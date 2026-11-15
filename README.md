@@ -1,20 +1,36 @@
 # Awesome-No-Code-Conversational-Bot-Builder
 
-# Awesome No-Code Conversational Bot Builder
+<p align="center">
+  <img src="./assets/banner.svg" alt="Awesome No-Code Conversational Bot Builder Banner" width="100%" />
+</p>
 
-> A curated list of top No-Code Conversational Bot Builder platforms — both SaaS/Hosted commercial solutions and open-source alternatives for visually designing, deploying, and managing chatbots across messaging channels.
-> 🌟 Star this repo if you find it useful! 🌟
+# 🤖 Awesome No-Code Conversational Bot Builder
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94bblueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-No-Code-Conversational-Bot-Builder/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-No-Code-Conversational-Bot-Builder?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-No-Code-Conversational-Bot-Builder/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-No-Code-Conversational-Bot-Builder?style=social" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-No-Code-Conversational-Bot-Builder/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-blue.svg" alt="License: CC0-1.0" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> 🚀 **The definitive curated list of top No-Code Conversational Bot Builders, Visual AI Chatbot Flow Designers, and Intelligent Agent Orchestration Platforms** — featuring commercial SaaS solutions, self-hosted open-source alternatives, and omnichannel automation suites across WhatsApp, Instagram, Telegram, Messenger, and Webchat.
+>
+> 🌟 **Star this repo if you find it helpful! Contributions and suggestions are always welcome.** 🌟
 
 ---
 
 ## 📋 Table of Contents
 
-- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
-- [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-- [Open-Source Software](#-open-source-software)
-- [Comparison at a Glance](#-comparison-at-a-glance)
-- [Contributing](#-contributing)
-- [License](#-license)
+- [📈 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🟦 SaaS / Hosted Platforms](#-saas--hosted-platforms)
+- [🟩 Open-Source Software](#-open-source-software)
+- [📊 Comparison at a Glance](#-comparison-at-a-glance)
+- [🤝 Contributing](#-contributing)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⭐ Star History](#-star-history)
+- [📄 License](#-license)
 
 ---
 
@@ -173,14 +189,32 @@ API keys are encrypted at rest (AES-256), and data stays inside your Supabase. *
 
 Contributions are welcome! If you know of an open-source No-Code Conversational Bot Builder tool that should be listed here, please open a pull request with:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
+- 📌 Project name and URL
+- 📝 Brief description (1–2 sentences)
+- 🛠️ Stack and license
+- 💡 Why it stands out
 
 Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source.
 
 **Note on the open-source ecosystem:** The no-code chatbot landscape is **dominated by ManyChat alternatives** rather than direct Voiceflow or Ada equivalents. **ZernFlow** and **ChatbotX** are the most direct ManyChat replacements, both offering visual flow builders with 15+ node types and AI response capabilities—ChatbotX is the more feature-dense option with MCP support and broader omnichannel coverage [citation:1][citation:11]. **BrightBean Chat** differentiates by eliminating Redis and message brokers entirely, using Postgres as the sole datastore [citation:10]. **Tiledesk Design Studio** is the closest open-source analog to Voiceflow's graph-based design approach, with LLM integration and human handoff [citation:15]. For teams wanting LLM-native bot platforms rather than ManyChat clones, **LangBot** offers the broadest IM channel coverage (15+ platforms) with RAG and MCP support [citation:2]. **Flowise** is a capable LLM flow builder but carries significant production caveats—SQLite concurrency risks, no loop nodes, and enterprise features gated behind paid tiers even when self-hosted [citation:12].
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you so much for exploring and supporting **Awesome No-Code Conversational Bot Builder**! 💫
+
+If this curated repository has saved you research time, inspired a project, or helped you discover open-source chatbot tools:
+- ⭐ **Star this repository** to help others find it!
+- 🍴 **Fork and contribute** your favorite builders and frameworks.
+- 📢 **Share with fellow developers, marketers, and creators** across your network.
+- ☕ **Buy a coffee & sponsor ongoing maintenance:** Support development and curation on the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007). Every contribution is deeply appreciated!
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-No-Code-Conversational-Bot-Builder&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-No-Code-Conversational-Bot-Builder&type=date&legend=top-left)
 
 ---
 
