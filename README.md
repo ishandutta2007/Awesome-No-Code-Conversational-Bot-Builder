@@ -9,22 +9,18 @@
 
 ## 📋 Table of Contents
 
+- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
 - [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [ManyChat](#manychat)
-  - [Voiceflow](#voiceflow)
-  - [Ada](#ada)
-  - [Yellow.ai](#yellowai)
-  - [Kore.ai](#koreai)
-  - [Chatfuel](#chatfuel)
 - [Open-Source Software](#-open-source-software)
-  - [Tiledesk Design Studio](#tiledesk-design-studio)
-  - [ZernFlow](#zernflow)
-  - [ChatbotX](#chatbotx)
-  - [BrightBean Chat](#brightbean-chat)
-  - [LangBot](#langbot)
-  - [Flowise](#flowise)
-  - [HeHo](#heho)
-  - [InstaAuto](#instaauto)
+- [Comparison at a Glance](#-comparison-at-a-glance)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+---
+
+## 📈 Sector Overview & Market Dynamics
+
+The global conversational AI and bot builder market is estimated at **$13 billion to $17.6 billion** and is projected to expand beyond **$80 billion to $170 billion by the mid-2030s**, compounding at a CAGR of ~21%–28%. The sector exhibits a distinct two-layer competitive dynamic: the underlying foundation models and cloud NLP infrastructure are highly **concentrated** among Big Tech hyper-scalers (Google, Microsoft, AWS, OpenAI), whereas the application and bot builder layer remains **moderately to highly fragmented**, characterized by fierce competition across specialized vertical assistants, social media automation, customer experience (CX) tools, and agile open-source alternatives.
 
 ---
 
