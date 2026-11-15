@@ -43,47 +43,29 @@ Commercial, cloud-hosted No-Code Conversational Bot Builder platforms. These are
 
 Self-hosted, community-driven No-Code Conversational Bot Builder tools. The open-source ecosystem spans **visual graph-based designers**, **ManyChat alternatives for social channels**, **LLM-native bot platforms**, and **database-connected AI builders**.
 
-### Tiledesk Design Studio
-**Stack:** TypeScript / Node.js | **License:** Open Source (GitHub)
-Tiledesk Design Studio is an open-source visual, no-code designer where LLM/GPT AI meets a flexible **graph-based approach** for creating conversations and automations, explicitly positioned as a **Voiceflow and Botpress alternative** [citation:15]. Key features include drag-and-drop design with AI-assisted suggestions, support for chatbots, voice assistants, and other interactive experiences [citation:15]. The broader Tiledesk platform is a full-stack open-source live chat with built-in chatbots, written in Node.js and Angular [citation:8]. The Design Studio has 453 GitHub stars and 95 forks, with active development (last push September 2026) [citation:15]. **Note:** The Tiledesk server repository shows limited code review activity (0/30 approved changesets) and no SAST or security policy detected, so production hardening should be evaluated carefully [citation:4].
-**Best for:** Teams wanting a visual graph-based chatbot designer with LLM integration and human handoff, accepting a newer project than ManyChat or Voiceflow.
+### Dify [![GitHub Repo stars](https://img.shields.io/github/stars/langgenius/dify?style=social&color=white)](https://github.com/langgenius/dify/stargazers)
+**Stack:** Python / Next.js / PostgreSQL / Redis | **License:** Apache-2.0
+Dify is an open-source LLM application development platform that combines visual AI workflow orchestration, conversational bot creation, Agent capabilities, RAG pipelines, and model management into a single visual canvas. It provides ready-to-use web chat interfaces, API access, and integrations across messaging platforms like Slack, Discord, and WeChat.
+**Best for:** Teams wanting an enterprise-grade visual AI bot and workflow builder with multi-model support, RAG, and fine-grained agent tooling.
 
-### ZernFlow
-**Stack:** Next.js / Supabase | **License:** Open Source (GitHub)
-ZernFlow is an open-source **ManyChat alternative** with a visual flow builder supporting Instagram, Facebook, WhatsApp, Telegram, Twitter/X, Bluesky, and Reddit [citation:1]. Key features include:
-- **Visual Flow Builder** with 15+ node types
-- **AI Response Node** via OpenAI, Anthropic, or Google (Vercel AI SDK)
-- **Live Chat Inbox** with human takeover and conversation assignment
-- **Contact CRM** with tags, custom fields, and segments
-- **Broadcasting and Sequences** for drip campaigns
-- **Comment-to-DM** automation
-- **A/B Testing** and **Webhooks & HTTP** for external API integration
+### Langflow [![GitHub Repo stars](https://img.shields.io/github/stars/langflow-ai/langflow?style=social&color=white)](https://github.com/langflow-ai/langflow/stargazers)
+**Stack:** Python / React | **License:** MIT
+Langflow is a dynamic visual framework and flow builder for designing multi-agent and RAG conversational applications. Featuring a drag-and-drop canvas with pre-built components for vector databases, LLMs, prompt templates, and custom python functions, it enables rapid prototyping and visual deployment of conversational bots.
+**Best for:** Developers and creators seeking a flexible Python-native visual canvas to architect complex multi-agent conversational bots.
 
-Deploys via Vercel with Supabase (PostgreSQL + Auth) and requires a Zernio API key for OAuth and cross-platform messaging [citation:1]. **Important limitation:** WhatsApp needs a Business Account, and Meta only accepts free-form messages within 24 hours of the contact's last message—broadcasts and delayed sequence steps can be rejected outside that window [citation:1].
-**Best for:** Teams wanting a ManyChat-style visual flow builder for social media automation with AI responses, accepting the Zernio dependency and WhatsApp messaging constraints.
+### Flowise [![GitHub Repo stars](https://img.shields.io/github/stars/FlowiseAI/Flowise?style=social&color=white)](https://github.com/FlowiseAI/Flowise/stargazers)
+**Stack:** Node.js / TypeScript | **License:** Apache-2.0
+Flowise is an open-source **visual LLM flow builder** with drag-and-drop components for building chatbots and agents. **Important caveats:** It defaults to SQLite, which is **not safe for concurrent writes**—production deployments must switch to PostgreSQL to avoid data corruption. Building from source on machines with <4 GB RAM frequently triggers heap exhaustion (workaround: `--max-old-space-size=4096`). **No native loop nodes**—only If/Else branching, requiring embedded code for iteration. Enterprise features (RBAC, SSO, audit logging) are **paywalled behind the Enterprise tier even when self-hosted**.
+**Best for:** Teams wanting a visual LLM flow builder for prototyping, accepting the SQLite concurrency risks, loop limitations, and enterprise feature gating.
 
-### ChatbotX
-**Stack:** Node.js / TypeScript / Next.js / PostgreSQL / Redis | **License:** Open Source (GitHub)
-ChatbotX is an open-source **ManyChat alternative built for AI**, with omnichannel marketing across WhatsApp, TikTok, Facebook, Instagram, Telegram, Zalo, Email, API, and Webchat [citation:11]. Key features include:
-- **Visual Flow Builder** with 15+ node types
-- **AI Agents** via OpenAI, Claude, Gemini, DeepSeek, OpenRouter, NVIDIA NIM, and Local LLMs
-- **Live Chat Inbox** with human takeover
-- **Contact CRM**, Broadcasting, Sequences, Team Management
-- **Comment Automation** (auto-reply, like, hide) on Messenger, Instagram, Threads, and TikTok
-- **A/B Testing, Triggers, Webhooks & HTTP**
-- **APIs, CLI, and MCP** for advanced agent workflows
+### Chatwoot [![GitHub Repo stars](https://img.shields.io/github/stars/chatwoot/chatwoot?style=social&color=white)](https://github.com/chatwoot/chatwoot/stargazers)
+**Stack:** Ruby on Rails / Vue.js / PostgreSQL / Redis | **License:** AGPL-3.0
+Chatwoot is an open-source, self-hosted customer engagement and conversational support suite. It integrates deeply with live chat, WhatsApp, Facebook, Instagram, Twitter, and email, and features conversational bot automation, webhook hooks, dialogflow integrations, and interactive chatbot flows for customer communication.
+**Best for:** Teams looking for a self-hosted omnichannel support hub with built-in conversational automation and human handoff.
 
-The tech stack includes Next.js 16, React 19, Drizzle ORM with PostgreSQL and pgvector, Redis with BullMQ, and S3-compatible storage [citation:11]. A standalone `chatbotx-docker-compose` repo runs pre-built images with `docker compose up`, no local checkout required [citation:11].
-**Best for:** Teams wanting a feature-dense ManyChat alternative with AI agents, omnichannel coverage, and MCP support, accepting a heavier Node.js/Redis/PostgreSQL stack.
-
-### BrightBean Chat
-**Stack:** Django / HTMX / PostgreSQL | **License:** AGPL-3.0
-BrightBean Chat is an open-source, self-hostable **ManyChat alternative** with a visual flow builder, shared inbox, broadcasts, sequences, and analytics across Telegram, Instagram, Messenger, WhatsApp, SMS, and email [citation:10]. It runs on Django 5, HTMX, and PostgreSQL—**no Redis, no message broker, no aggregator** between you and the platforms. Postgres is the only datastore, serving as task queue, lock manager, and rate limiter [citation:10]. Deployment via Railway includes a Postgres database, web service, and background worker. **Critical:** Back up `SECRET_KEY` and `ENCRYPTION_KEY_SALT`—they decrypt channel credentials, and a database dump without them is unreadable [citation:10]. Webhooks require a public HTTPS domain; a deployment that is not publicly reachable can send messages but never receive them [citation:10].
-**Best for:** Teams wanting a lightweight ManyChat alternative without Redis or a message broker, accepting the Django/PostgreSQL stack and the critical key backup requirement.
-
-### LangBot
+### LangBot [![GitHub Repo stars](https://img.shields.io/github/stars/langbot-app/LangBot?style=social&color=white)](https://github.com/langbot-app/LangBot/stargazers)
 **Stack:** Python | **License:** Open Source (GitHub)
-LangBot is an open-source, **production-grade, LLM-native instant messaging bot development platform** with a single codebase that reaches Discord, Telegram, Slack, LINE, KOOK, Matrix, QQ, WeChat, WeCom, Lark, DingTalk, and more [citation:2]. Key capabilities include:
+LangBot is an open-source, **production-grade, LLM-native instant messaging bot development platform** with a single codebase that reaches Discord, Telegram, Slack, LINE, KOOK, Matrix, QQ, WeChat, WeCom, Lark, DingTalk, and more:
 - **AI Conversation & Agent** with multi-turn dialogue, tool calling, multimodal support, and streaming output
 - **RAG Knowledge Base** with vector retrieval and rerank re-scoring
 - **Deep Agent Platform Integration** with Dify, Coze, n8n, Langflow, and others
@@ -92,29 +74,72 @@ LangBot is an open-source, **production-grade, LLM-native instant messaging bot 
 - **Production-grade Plugin System** with hundreds of community plugins
 - **Multi-pipeline Architecture** for running different bots per scenario
 
-It uses LiteLLM as a unified model backend, supporting OpenAI, Anthropic, DeepSeek, Gemini, Ollama, and many others [citation:2].
+It uses LiteLLM as a unified model backend, supporting OpenAI, Anthropic, DeepSeek, Gemini, Ollama, and many others.
 **Best for:** Teams wanting an LLM-native bot platform with broad IM channel coverage and RAG capabilities, accepting a Python stack and configuration complexity.
 
-### Flowise
-**Stack:** Node.js / TypeScript | **License:** Apache-2.0
-Flowise is an open-source **visual LLM flow builder** with drag-and-drop components for building chatbots and agents. **Important caveats:** It defaults to SQLite, which is **not safe for concurrent writes**—production deployments must switch to PostgreSQL to avoid data corruption [citation:12]. Building from source on machines with <4 GB RAM frequently triggers heap exhaustion (workaround: `--max-old-space-size=4096`) [citation:12]. **No native loop nodes**—only If/Else branching, requiring embedded code for iteration [citation:12]. Enterprise features (RBAC, SSO, audit logging) are **paywalled behind the Enterprise tier even when self-hosted** [citation:12]. Workday's acquisition has introduced roadmap uncertainty [citation:12].
-**Best for:** Teams wanting a visual LLM flow builder for prototyping, accepting the SQLite concurrency risks, loop limitations, and enterprise feature gating.
+### Botpress [![GitHub Repo stars](https://img.shields.io/github/stars/botpress/botpress?style=social&color=white)](https://github.com/botpress/botpress/stargazers)
+**Stack:** TypeScript / Node.js / React | **License:** AGPL-3.0 / Open Source
+Botpress is an open-source conversational AI developer platform and visual flow studio for building, testing, and deploying intelligent chatbots. It provides visual dialogue management, NLU/NLP tools, omnichannel connectors (WhatsApp, Messenger, Slack, Teams, Webchat), and generative AI transitions.
+**Best for:** Developers needing a modular visual chatbot builder with robust NLU capabilities and enterprise channel connectors.
 
-### HeHo
+### Typebot [![GitHub Repo stars](https://img.shields.io/github/stars/baptisteArno/typebot.io?style=social&color=white)](https://github.com/baptisteArno/typebot.io/stargazers)
+**Stack:** TypeScript / Next.js / Prisma / PostgreSQL | **License:** AGPL-3.0
+Typebot is an open-source, no-code conversational form and chatbot builder. It features an intuitive drag-and-drop block interface for visually assembling conversational flows, collecting lead qualification data, executing webhooks, and embedding bots directly into web applications or connecting via WhatsApp.
+**Best for:** Marketers and builders looking for a sleek visual conversational form and lead-generation bot builder alternative to Landbot.
+
+### ChatbotX [![GitHub Repo stars](https://img.shields.io/github/stars/ChatbotXIO/ChatbotX?style=social&color=white)](https://github.com/ChatbotXIO/ChatbotX/stargazers)
+**Stack:** Node.js / TypeScript / Next.js / PostgreSQL / Redis | **License:** Open Source (GitHub)
+ChatbotX is an open-source **ManyChat alternative built for AI**, with omnichannel marketing across WhatsApp, TikTok, Facebook, Instagram, Telegram, Zalo, Email, API, and Webchat:
+- **Visual Flow Builder** with 15+ node types
+- **AI Agents** via OpenAI, Claude, Gemini, DeepSeek, OpenRouter, NVIDIA NIM, and Local LLMs
+- **Live Chat Inbox** with human takeover
+- **Contact CRM**, Broadcasting, Sequences, Team Management
+- **Comment Automation** (auto-reply, like, hide) on Messenger, Instagram, Threads, and TikTok
+- **A/B Testing, Triggers, Webhooks & HTTP**
+- **APIs, CLI, and MCP** for advanced agent workflows
+
+The tech stack includes Next.js 16, React 19, Drizzle ORM with PostgreSQL and pgvector, Redis with BullMQ, and S3-compatible storage. A standalone `chatbotx-docker-compose` repo runs pre-built images with `docker compose up`.
+**Best for:** Teams wanting a feature-dense ManyChat alternative with AI agents, omnichannel coverage, and MCP support, accepting a heavier Node.js/Redis/PostgreSQL stack.
+
+### Tiledesk Design Studio [![GitHub Repo stars](https://img.shields.io/github/stars/Tiledesk/design-studio?style=social&color=white)](https://github.com/Tiledesk/design-studio/stargazers)
+**Stack:** TypeScript / Node.js | **License:** Open Source (GitHub)
+Tiledesk Design Studio is an open-source visual, no-code designer where LLM/GPT AI meets a flexible **graph-based approach** for creating conversations and automations, explicitly positioned as a **Voiceflow and Botpress alternative**. Key features include drag-and-drop design with AI-assisted suggestions, support for chatbots, voice assistants, and other interactive experiences. The broader Tiledesk platform is a full-stack open-source live chat with built-in chatbots, written in Node.js and Angular.
+**Best for:** Teams wanting a visual graph-based chatbot designer with LLM integration and human handoff, accepting a newer project than ManyChat or Voiceflow.
+
+### ZernFlow [![GitHub Repo stars](https://img.shields.io/github/stars/zernio-dev/zernflow?style=social&color=white)](https://github.com/zernio-dev/zernflow/stargazers)
+**Stack:** Next.js / Supabase | **License:** Open Source (GitHub)
+ZernFlow is an open-source **ManyChat alternative** with a visual flow builder supporting Instagram, Facebook, WhatsApp, Telegram, Twitter/X, Bluesky, and Reddit:
+- **Visual Flow Builder** with 15+ node types
+- **AI Response Node** via OpenAI, Anthropic, or Google (Vercel AI SDK)
+- **Live Chat Inbox** with human takeover and conversation assignment
+- **Contact CRM** with tags, custom fields, and segments
+- **Broadcasting and Sequences** for drip campaigns
+- **Comment-to-DM** automation
+- **A/B Testing** and **Webhooks & HTTP** for external API integration
+
+Deploys via Vercel with Supabase (PostgreSQL + Auth) and requires a Zernio API key for OAuth and cross-platform messaging. **Important limitation:** WhatsApp needs a Business Account, and Meta only accepts free-form messages within 24 hours of the contact's last message—broadcasts and delayed sequence steps can be rejected outside that window.
+**Best for:** Teams wanting a ManyChat-style visual flow builder for social media automation with AI responses, accepting the Zernio dependency and WhatsApp messaging constraints.
+
+### InstaAuto [![GitHub Repo stars](https://img.shields.io/github/stars/ayuuxh2/insta-p8?style=social&color=white)](https://github.com/ayuuxh2/insta-p8/stargazers)
+**Stack:** Next.js / Supabase | **License:** Open Source (GitHub)
+InstaAuto (`insta-p8`) is a free, open-source **ManyChat alternative for Instagram**, self-hosted on Vercel and Supabase free tiers, connecting via the official Instagram API. Features include DM keyword automation, comment-to-DM funnels, story-reply automation, and a live inbox, all with **$0/month** running costs. It uses official Instagram API permissions and does not scrape, mass-DM, or bypass rate limits. **Limitation:** Instagram-only, and requires Meta app permissions and review for production use.
+**Best for:** Instagram creators wanting a free, self-hosted DM automation tool, accepting the Instagram-only scope and Meta API requirements.
+
+### BrightBean Chat [![GitHub Repo stars](https://img.shields.io/github/stars/brightbeanxyz/brightbean-chat?style=social&color=white)](https://github.com/brightbeanxyz/brightbean-chat/stargazers)
+**Stack:** Django / HTMX / PostgreSQL | **License:** AGPL-3.0
+BrightBean Chat is an open-source, self-hostable **ManyChat alternative** with a visual flow builder, shared inbox, broadcasts, sequences, and analytics across Telegram, Instagram, Messenger, WhatsApp, SMS, and email. It runs on Django 5, HTMX, and PostgreSQL—**no Redis, no message broker, no aggregator** between you and the platforms. Postgres is the only datastore, serving as task queue, lock manager, and rate limiter. Deployment via Railway includes a Postgres database, web service, and background worker. **Critical:** Back up `SECRET_KEY` and `ENCRYPTION_KEY_SALT`—they decrypt channel credentials, and a database dump without them is unreadable. Webhooks require a public HTTPS domain; a deployment that is not publicly reachable can send messages but never receive them.
+**Best for:** Teams wanting a lightweight ManyChat alternative without Redis or a message broker, accepting the Django/PostgreSQL stack and the critical key backup requirement.
+
+### HeHo [![GitHub Repo stars](https://img.shields.io/github/stars/Sparrow-AI-Solutions/HeHo?style=social&color=white)](https://github.com/Sparrow-AI-Solutions/HeHo/stargazers)
 **Stack:** Supabase / OpenRouter | **License:** MIT
-HeHo is a fully open-source, **no-code AI chatbot builder** that connects directly to your own Supabase database, with no local setup required—everything works from the web [citation:6]. Key features include:
+HeHo is a fully open-source, **no-code AI chatbot builder** that connects directly to your own Supabase database, with no local setup required—everything works from the web:
 - **Connect your own Supabase** via OAuth, with automatic table creation and Row Level Security setup
 - **OpenRouter integration** for 35+ free AI models (Llama, Mistral, Gemma)
 - **Fine-grained database permissions**—chatbots can read data and create entries, with explicit permission boundaries
 - **Hallucination reduction** by restricting AI responses to verified database queries
 
-API keys are encrypted at rest (AES-256), and data stays inside your Supabase [citation:6]. **Note:** The project is newer and focused on database-grounded chatbots rather than broad channel deployment.
+API keys are encrypted at rest (AES-256), and data stays inside your Supabase. **Note:** The project is newer and focused on database-grounded chatbots rather than broad channel deployment.
 **Best for:** Teams wanting a no-code AI chatbot grounded in their own Supabase data, accepting a narrower scope than full omnichannel platforms.
-
-### InstaAuto
-**Stack:** Next.js / Supabase | **License:** Open Source (GitHub)
-InstaAuto is a free, open-source **ManyChat alternative for Instagram**, self-hosted on Vercel and Supabase free tiers, connecting via the official Instagram API [citation:5]. Features include DM keyword automation, comment-to-DM funnels, story-reply automation, and a live inbox, all with **$0/month** running costs [citation:5]. It uses official Instagram API permissions and does not scrape, mass-DM, or bypass rate limits [citation:5]. **Limitation:** Instagram-only, and requires Meta app permissions and review for production use [citation:5].
-**Best for:** Instagram creators wanting a free, self-hosted DM automation tool, accepting the Instagram-only scope and Meta API requirements.
 
 ---
 
@@ -122,16 +147,25 @@ InstaAuto is a free, open-source **ManyChat alternative for Instagram**, self-ho
 
 | Software | License | Stack | Visual Builder | Omnichannel | AI/LLM | Self-Hosted | Best For |
 |----------|---------|-------|----------------|-------------|--------|-------------|----------|
-| **ManyChat** | Proprietary | Cloud | ✅ | ✅ IG/FB/WhatsApp | ✅ | ❌ | Social messaging automation |
-| **Voiceflow** | Proprietary | Cloud | ✅ Design-first | ✅ | ✅ | ❌ | Conversational design |
-| **Tiledesk Design Studio** | Open Source | TypeScript/Node | ✅ Graph-based | ✅ Multichannel | ✅ LLM | ✅ | Voiceflow/Botpress alternative |
-| **ZernFlow** | Open Source | Next.js/Supabase | ✅ 15+ nodes | ✅ 7 platforms | ✅ | ✅ | ManyChat alternative |
-| **ChatbotX** | Open Source | Node.js/Postgres | ✅ 15+ nodes | ✅ Broad | ✅ AI agents | ✅ | Feature-dense ManyChat alt |
-| **BrightBean Chat** | AGPL-3.0 | Django/Postgres | ✅ | ✅ Multi-channel | (Check) | ✅ | No Redis/broker ManyChat alt |
-| **LangBot** | Open Source | Python | (Web panel) | ✅ 15+ IM platforms | ✅ LLM-native | ✅ | Broad IM + RAG |
-| **Flowise** | Apache-2.0 | Node.js | ✅ LLM flow | (Check) | ✅ | ✅ | LLM prototyping |
-| **HeHo** | MIT | Supabase | (Check) | (Check) | ✅ OpenRouter | ✅ (Web) | Database-grounded bots |
-| **InstaAuto** | Open Source | Next.js/Supabase | (Check) | Instagram only | ✅ | ✅ | Free IG DM automation |
+| **Kore.ai** | Proprietary | Cloud | ✅ Enterprise Studio | ✅ 35+ channels | ✅ Multi-model / RAG | ❌ | Enterprise conversational AI |
+| **ManyChat** | Proprietary | Cloud | ✅ | ✅ IG/FB/WhatsApp/TikTok | ✅ | ❌ | Social messaging automation |
+| **Yellow.ai** | Proprietary | Cloud | ✅ Dynamic automation | ✅ 35+ chat & voice | ✅ Generative AI | ❌ | Enterprise voice & chat support |
+| **Ada** | Proprietary | Cloud | ✅ Conversational AI | ✅ Web/Email/SMS/Social | ✅ Reasoning engine | ❌ | Customer service resolution |
+| **Voiceflow** | Proprietary | Cloud | ✅ Design-first | ✅ Multichannel | ✅ | ❌ | Conversational design & prototyping |
+| **Chatfuel** | Proprietary | Cloud | ✅ | ✅ IG/FB/WhatsApp | ✅ ChatGPT powered | ❌ | Social & WhatsApp chatbot builder |
+| **Dify** | Apache-2.0 | Python/Next.js | ✅ Visual Canvas | ✅ Slack/Discord/Web/API | ✅ LLM-native & RAG | ✅ | Visual AI bot & workflow orchestration |
+| **Langflow** | MIT | Python/React | ✅ Flow Canvas | ✅ Multi-agent / API | ✅ Multi-LLM / Vector DB | ✅ | Multi-agent conversational flows |
+| **Flowise** | Apache-2.0 | Node.js | ✅ LLM flow | ✅ Web/Slack/API | ✅ Drag-and-drop | ✅ | Rapid LLM bot prototyping |
+| **Chatwoot** | AGPL-3.0 | Ruby/Vue | ✅ Visual / Automation | ✅ Live chat/WA/IG/Email | ✅ AI Assist | ✅ | Omnichannel support with human handoff |
+| **LangBot** | Open Source | Python | ✅ Web panel | ✅ 15+ IM platforms | ✅ LLM-native & RAG | ✅ | Broad IM coverage + RAG / MCP |
+| **Botpress** | AGPL-3.0 / Open | TS/Node/React | ✅ Visual Studio | ✅ WA/Messenger/Slack/Web | ✅ NLU & Generative AI | ✅ | Modular dialogue & NLU chatbot engine |
+| **Typebot** | AGPL-3.0 | TypeScript/Next | ✅ Visual Blocks | ✅ Web embed & WhatsApp | ✅ Multi-provider | ✅ | Conversational forms & lead capture |
+| **ChatbotX** | Open Source | Node.js/Postgres | ✅ 15+ nodes | ✅ 9+ channels | ✅ AI agents & MCP | ✅ | Feature-dense ManyChat alternative |
+| **Tiledesk Design Studio** | Open Source | TypeScript/Node | ✅ Graph-based | ✅ Multichannel | ✅ LLM & Handover | ✅ | Voiceflow/Botpress alternative |
+| **ZernFlow** | Open Source | Next.js/Supabase | ✅ 15+ nodes | ✅ 7 platforms | ✅ Vercel AI SDK | ✅ | ManyChat social media alternative |
+| **InstaAuto** | Open Source | Next.js/Supabase | ✅ UI Dashboard | Instagram only | ✅ AI replies | ✅ | Free Instagram DM automation |
+| **BrightBean Chat** | AGPL-3.0 | Django/Postgres | ✅ Flow builder | ✅ Telegram/IG/WA/SMS | ✅ AI responses | ✅ | Lightweight ManyChat alt (no Redis) |
+| **HeHo** | MIT | Supabase | ✅ Web Studio | Webchat | ✅ OpenRouter (35+ models)| ✅ (Web) | Database-grounded Supabase bots |
 
 ---
 
