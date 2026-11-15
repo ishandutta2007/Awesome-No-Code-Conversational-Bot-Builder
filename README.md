@@ -32,29 +32,14 @@
 
 Commercial, cloud-hosted No-Code Conversational Bot Builder platforms. These are not open-source but are included as reference points for feature comparison.
 
-### ManyChat
-**Type:** Visual chatbot builder for social messaging
-ManyChat is the most widely adopted no-code chatbot platform for Instagram, Facebook Messenger, and WhatsApp, with a drag-and-drop flow builder, comment-to-DM automation, broadcasts, and sequences. It is the primary commercial reference for open-source alternatives like ZernFlow, ChatbotX, and BrightBean Chat.
-
-### Voiceflow
-**Type:** Conversational design and prototyping platform
-Voiceflow is a collaborative platform for designing, prototyping, and launching conversational assistants, with a strong focus on the design process rather than just deployment. It is frequently cited as the benchmark for open-source alternatives like Tiledesk Design Studio.
-
-### Ada
-**Type:** AI-powered customer service automation
-Ada provides AI-driven chatbots for customer support automation, with a focus on resolving inquiries without human intervention. It is positioned for enterprises wanting sophisticated NLP and automated resolution.
-
-### Yellow.ai
-**Type:** Enterprise conversational AI platform
-Yellow.ai provides conversational AI for customer support and engagement across voice and chat channels, with agent-assist capabilities and integrations into enterprise systems.
-
-### Kore.ai
-**Type:** Enterprise conversational AI with agent platform
-Kore.ai offers a comprehensive conversational AI platform with a visual builder, NLP engine, and support for voice and chat channels across enterprise deployments.
-
-### Chatfuel
-**Type:** No-code chatbot builder for messaging platforms
-Chatfuel is a long-standing no-code chatbot builder for Facebook Messenger, Instagram, and WhatsApp, with a visual flow builder and AI features. It is a direct competitor to ManyChat.
+| Platform | Type | Pricing (Starting Tier) | Free Tier Limits |
+|---|---|---|---|
+| **ManyChat** | Visual chatbot builder for social messaging | $15/month ($180/year billed annually) or $15/month for Pro up to 500 contacts | Free forever plan: Capped at 25 Active Contacts/month, up to 2 social channels (Instagram, Facebook Messenger, TikTok, or Telegram), 1 team seat, and max 4 live automations. |
+| **Voiceflow** | Conversational design and prototyping platform | $60/month (billed annually at $50/month) for Pro plan | Free forever tier: 100 one-time non-renewing AI credits sandbox, 2 agents, 50 knowledge base data sources, and 1 editor seat. |
+| **Ada** | AI-powered customer service automation | $30,000/year (billed annually, ~$2,500/month starting enterprise tier) | No free forever plan; 14-day guided proof-of-concept / pilot evaluation with custom interaction limits upon sales qualification. |
+| **Yellow.ai** | Enterprise conversational AI platform | $10,000/year (~$833/month starting base enterprise tier) | Free forever plan: 1 AI Agent, 2 human agent seats, up to 500 free chat sessions/month (additional usage at $0.99/session). |
+| **Kore.ai** | Enterprise conversational AI with agent platform | $50/month (Community/Starter tier; enterprise custom setups from $50,000/year) | Free forever developer sandbox: Up to 5,000 requests/month, 1 bot builder workspace, and basic NLP sandbox testing. |
+| **Chatfuel** | No-code chatbot builder for messaging platforms | $18/month (billed annually at $216/year) or $20/month for Business plan | 7-day free trial with $20 bundled AI credit allowance, unlimited active contacts, and access to core visual flow building features (no free forever plan). |
 
 ---
 
